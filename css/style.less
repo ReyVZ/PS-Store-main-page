@@ -1,0 +1,48 @@
+@import "data";
+
+.navbar {
+  background-color: rgba(@r, @g, @b, @a * 0.4);
+  font-size: 18px;
+  border: none;
+  margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: lighten(@dark_font_color, 20%);
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: lighten(@dark_font_color, 40%);
+}
+
+.navbar-brand {
+  padding: 5px 5px 15px;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.header {
+  .background_style();
+  background-image: url("../images/back.jpg");
+}
+
+.discount {
+  .background_style();
+  background-image: url("../images/dis.jpg");
+  color: @light_font_color;
+}
+
+.panel-default,
+.panel-info {
+  .panel_style();
+}
+
+.prods {
+  background-image: url("../images/prods.png");
+}
+
+.footer {
+  .footer_style();
+}

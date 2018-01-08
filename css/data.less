@@ -1,0 +1,98 @@
+@dark_background: #1F1F1F;
+@standard_background: #333333;
+@light_background: #FFFFFF;
+@light_font_color: #FFFFFF;
+@standard_font_color: #333333;
+@dark_font_color: #000000;
+@text_shadow: 2px 2px 1px grey;
+@r: 255;
+@g: 255;
+@b: 255;
+@a: 1;
+
+.background_style() {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+
+  .page-header {
+    padding: 200px 0;
+    text-shadow: @text_shadow;
+    margin: 0;
+
+    h1 {
+      font-size: 64px;
+    }
+
+    h2 {
+      font-size: 48px;
+    }
+
+    p {
+      font-size: 32px;
+    }
+
+    a {
+      font-size: 24px;
+    }
+  }
+}
+
+.panel_style() {
+  margin-bottom: 0;
+  border: none;
+
+  .panel-heading {
+    background-color: rgba(@r, @g, @b, 0);
+    border: none;
+    color: @standard_font_color;
+
+    h3 {
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+      padding: 20px;
+    }
+  }
+
+  .panel-body {
+    text-align: center;
+
+    .thumbnail {
+      border: none;
+
+      a {
+        font-size: 16px;
+        background-image: linear-gradient(to top left, #C4D2D3 0%, #FFFFFF 50%, #C4D2D3 100%);
+      }
+    }
+  }
+
+  .media {
+    padding: 0 0 12px;
+    text-align: left;
+
+    .media-body {
+      padding-top: 12px;
+    }
+  }
+}
+
+.footer_style {
+  padding-top: 16px;
+  background-color: @standard_background;
+
+  .list-group .list-group-item {
+    background-color: inherit;
+    border: none;
+    color: darken(@light_font_color, 20%);
+    font-size: 16px;
+  }
+
+  .panel-footer {
+    background-color: @dark_background;
+    color: darken(@light_font_color, 20%);
+    text-align: right;
+    border: none;
+  }
+}
